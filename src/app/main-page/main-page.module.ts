@@ -18,6 +18,7 @@ import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { FloatbarComponent } from './components/floatbar/floatbar.component';
 import { StackbarComponent } from './components/stackbar/stackbar.component';
+import { ServiceService } from './services/service.service';
 
 
 @NgModule({
@@ -32,7 +33,7 @@ import { StackbarComponent } from './components/stackbar/stackbar.component';
     AboutComponent,
     ContactComponent,
     FloatbarComponent,
-    StackbarComponent
+    StackbarComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +46,9 @@ import { StackbarComponent } from './components/stackbar/stackbar.component';
   exports: [
     HomeComponent,
     AboutComponent
+  ],
+  providers: [
+    ServiceService
   ]
 })
 export class MainPageModule { }

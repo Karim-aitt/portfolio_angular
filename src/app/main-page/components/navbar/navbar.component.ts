@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ServiceService } from '../../services/service.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  flagLanguage$ = this.ss.getFlagLanguage();
+
+  constructor(private ss: ServiceService){}
+
+  toggleFlagLanguage() {
+    console.log("button on")
+    this.ss.toggleFlagLanguage();
+  }
 }

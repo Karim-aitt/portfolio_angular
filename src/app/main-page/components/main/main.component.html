@@ -1,6 +1,6 @@
 <app-header></app-header>
 <div class="d-flex container mt-4 flex-wrap" id="main">
-  <section class="col-12 col-lg-6 text_main">
+  <section class="col-12 col-lg-6 text_main" *ngIf="flag">
     <p class="">
       <b>Welcome to my portfolio.</b> I am a junior frontend developer with
       experience using tools such as
@@ -29,7 +29,43 @@
       <b>Thank you for visiting my portfolio.</b> If you have any questions or
       would like to work with me, please do not hesitate to get in touch.
       <a
-        href="#"
+        routerLink="contact"
+        class="material-symbols-outlined text-primary d-flex flex-end"
+      >
+        keyboard_double_arrow_right
+      </a>
+    </p>
+  </section>
+  <section class="col-12 col-lg-6 text_main" *ngIf="!flag">
+    <p class="">
+      <b>Bienvenido a mi portfolio.</b> Soy un desarrollador frontend junior con
+      experiencia en el uso de herramientas como
+      <span class="highlight"
+        >HTML, CSS, JavaScript, TypeScript, React, y Angular.</span
+      >
+      Soy un apasionado del desarrollo web y amo crear dinámicas y
+      experiencias de usuario interactivas.
+    </p>
+    <p>
+      <b>En mis proyectos</b>, He usado
+      <span class="highlight">HTML y CSS</span> para crear atractivos
+      diseños receptivos, mientras que
+      <span class="highlight">JavaScript y TypeScript</span> me han permitido añadir
+      la funcionalidad y la lógica a mis aplicaciones.
+    </p>
+    <p>
+      <b>Además</b>, también he trabajado con
+      <span class="highlight">React y Angular</span> para construir aplicaciones web escalables y
+      modularizadas. Mi trabajo y experiencia personal en
+      desarrollo web me han permitido fortalecer mis habilidades técnicas y mi
+      capacidad para trabajar en equipo. Siempre estoy buscando nuevos retos que
+      me permitan seguir aprendiendo y mejorando mis habilidades.
+    </p>
+    <p>
+      <b>Gracias por visitar mi sitio personal.</b> Si tiene alguna pregunta o
+      quisiera trabajar conmigo, por favor no dude en ponerse en contacto.
+      <a
+        routerLink="contact"
         class="material-symbols-outlined text-primary d-flex flex-end"
       >
         keyboard_double_arrow_right
@@ -53,9 +89,13 @@
         <mat-card-content
           class="d-flex align-items-center justify-content-center border rounded"
         >
-          <p class="d-flex fw-bold text-primary me-3">
+          <p class="d-flex fw-bold text-primary me-3" *ngIf="flag">
             Layout <br />
             design
+          </p>
+          <p class="d-flex fw-bold text-primary me-3" *ngIf="!flag">
+            Maquetación <br />
+
           </p>
           <img
             src="https://i.ibb.co/WBsjz7R/illustration.png"
@@ -70,7 +110,8 @@
         <mat-card-content
           class="d-flex align-items-center justify-content-center border rounded"
         >
-          <p class="d-flex fw-bold text-primary">Innovation</p>
+          <p class="d-flex fw-bold text-primary" *ngIf="flag">Innovation</p>
+          <p class="d-flex fw-bold text-primary" *ngIf="!flag">Innovacion</p>
           <img src="https://i.ibb.co/xzsTSHr/test.png" alt="test" />
         </mat-card-content>
       </mat-card>
@@ -81,9 +122,13 @@
         <mat-card-content
           class="d-flex align-items-center justify-content-center border rounded"
         >
-          <p class="d-flex fw-bold text-primary me-3">
+          <p class="d-flex fw-bold text-primary me-3" *ngIf="flag">
             Good <br />
             practices
+          </p>
+          <p class="d-flex fw-bold text-primary me-3" *ngIf="!flag">
+            Buenas <br />
+            prácticas
           </p>
           <img src="https://i.ibb.co/kK4DvqQ/setting.png" alt="setting" />
         </mat-card-content>
