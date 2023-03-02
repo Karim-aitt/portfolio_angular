@@ -1,0 +1,35 @@
+.back_panel{
+  background-color: #e0fdef;
+  font-family: 'Outfit', sans-serif;
+}
+
+.front_panel{
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px  black;
+    padding: 80px;
+    max-width: 1000px;
+}
+
+.img_about{
+  width: 10%;
+  height: 10%;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.text_about{
+  font-size: medium;
+  letter-spacing: 1px;
+  line-height: 23px;
+}
+
+.highlight_1{
+  color: #0275d8;;
+  font-weight: 500;
+}
+
+.highlight_2{
+  color: #0275d8;;
+  border-bottom: 3px dashed #0275d8;;
+}

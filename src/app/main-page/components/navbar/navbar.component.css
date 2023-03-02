@@ -1,0 +1,18 @@
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.dark-mode{
+  cursor: pointer;
+}
+.language{
+  cursor: pointer;
+}
+
+.nav-text-size{
+  font-size:  medium;
+}

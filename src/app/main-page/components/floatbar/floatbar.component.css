@@ -1,0 +1,12 @@
+.float_bar{
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  border: 2px dashed #0274d887;
+  border-radius: 20px;
+}
+
+.floatbar_img{
+  width: 50%;
+}

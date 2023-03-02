@@ -1,0 +1,15 @@
+h1{
+  font-family: 'Outfit', sans-serif;
+  font-size: 3em;
+}
+
+h4{
+  font-weight: bold;
+}
+
+hr{
+  width: 15%;
+  border: none;
+  border-top: 5px dashed #0275d8;
+  color: white;
+}

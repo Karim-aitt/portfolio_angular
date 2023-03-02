@@ -1,0 +1,31 @@
+
+.back_panel{
+  background-color: #e0fdef;
+
+}
+
+.text_card{
+  font-size: medium;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+
+.title{
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+}
+.hr_title{
+  width: 20%;
+  margin: auto;
+  border: none;
+  border-top: 6px dashed black;
+  color:#e0fdef;
+}
+
+.separator{
+  border: none;
+  width: 50%;
+  margin: auto;
+  border-top: 20px dashed rgb(160, 160, 160);
+  color: #e0fdef;
+}

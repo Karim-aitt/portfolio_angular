@@ -1,0 +1,35 @@
+.back_panel{
+  background-color: #e0fdef;
+  font-family: 'Outfit', sans-serif;
+}
+.front_panel{
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px  black;
+  padding: 80px;
+  max-width: 1000px;
+}
+
+.text_a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: large;
+  padding: 20px;
+  border: 5px dashed rgba(0, 0, 0, 0.654);
+}
+.text_a:hover{
+  background-color: black;
+  color: white;
+
+}
+.contact_img{
+  padding: 5px;
+}
+
+.text_a:hover .contact_img{
+    pointer-events: none;
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
+}

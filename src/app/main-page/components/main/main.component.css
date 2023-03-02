@@ -1,0 +1,38 @@
+.imagen_cv{
+  max-width: 60%;
+  min-width: 50%;
+  border-radius: 100px;
+  /* border: 10px double #017ffd30; */
+}
+
+
+.highlight{
+  color: #0275d8;
+  font-weight: 500;
+}
+
+
+@media (max-width: 1000px){
+  .innovation_card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 1000px){
+  .w_center{
+    margin: auto;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1200px){
+  .push{
+    position: relative;
+    bottom: 150px;
+  }
+  .imagen_cv{
+    position: relative;
+    bottom: 120px;
+  }
+}
